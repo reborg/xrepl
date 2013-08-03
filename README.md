@@ -1,6 +1,6 @@
 # xrepl
 
-Set of utility functions designed to mix-in in your Clojure REPL sessions.
+Set of utility functions designed to mix-in eXpand your Clojure REPL sessions.
 
 ## Install
 
@@ -10,7 +10,11 @@ xrepl functions are inside the user namespace. Since the REPL starts by default 
       :profiles  {:dev {:dependencies [[xrepl "0.1.0"]]}}
     )
 
-## Utils
+## What's inside?
+
+### (refresh)
+
+xrepl comes with (tools.namespace|https://github.com/clojure/tools.namespace) refresh feature installed. Just (refresh) from the repl at any time to deep reload your files the tools.namespace way.
 
 ### m
 
