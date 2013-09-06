@@ -30,6 +30,10 @@ returns a sorted list of all the methods supported by the type of the instance g
 
 will only list what starts with the letter "p".
 
+### tool.trace
+
+[Tool.trace](https://github.com/clojure/tools.trace) (ex contrib) is now included in your REPL sessions! Just wrap a form to trace it.
+
 ## How to run the tests
 
 `lein midje` will run all tests.

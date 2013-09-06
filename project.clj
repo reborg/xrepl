@@ -1,4 +1,4 @@
-(defproject xrepl "0.1.1"
+(defproject xrepl "0.1.2"
   :description "Set of utility functions designed to mix-in in your Clojure REPL sessions."
   :url "https://github.com/reborg/xrepl"
   :license {:name "Eclipse Public License"
