@@ -1,2 +1,7 @@
-pom.xml
-pom.xml.asc
+/pom.xml
+*jar
+/.lein-failures
+/.lein-deps-sum
+/target
+.lein-repl-history
+.nrepl-port

@@ -1,5 +1,6 @@
 (ns user
-  (:use [clojure.tools.namespace.repl :only (refresh)]))
+  (:use [clojure.tools.namespace.repl :only (refresh)])
+  (:use clojure.tools.trace))
 
 (defn m 
   "Retrieves all methods supported by the class of the instance. Filter results
