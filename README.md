@@ -34,6 +34,7 @@ will only list what starts with the letter "p".
 
 [Tool.trace](https://github.com/clojure/tools.trace) (ex contrib) is now included in your REPL sessions! Just wrap a form to trace it.
 
-## How to run the tests
+## todo
 
-`lein midje` will run all tests.
+* lost clojars key-gpg configuration
+* travis-ci widget on the github page
