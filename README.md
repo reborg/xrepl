@@ -1,16 +1,16 @@
 # xrepl
 
-Set of utility functions designed to mix-in eXpand your Clojure REPL sessions.
+My set of utility functions designed to mix-in eXpand your Clojure REPL sessions. This is my usual dev/user.clj namespace wrapped as a lib for quick re-use.
 
 ## Install
 
 xrepl functions are inside the user namespace. Since the REPL starts by default in the user namespace, all you need to do from leiningen project.clj is:
 
     (defproject yourprj "0.0.1"
-      :profiles  {:dev {:dependencies [[xrepl "0.1.0"]]}}
+      :profiles  {:dev {:dependencies [[xrepl "0.1.2"]]}}
     )
 
-## What's inside?
+## What's inside (at the moment)?
 
 ### (refresh)
 
