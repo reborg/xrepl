@@ -32,9 +32,13 @@ will only list what starts with the letter "p".
 
 ### tool.trace
 
-[Tool.trace](https://github.com/clojure/tools.trace) (ex contrib) is now included in your REPL sessions! Just wrap a form to trace it.
+[Tool.trace](https://github.com/clojure/tools.trace) (ex contrib) is now included in your REPL sessions! The way I use it the most is to request tracing for a specific method like so:
+
+      (trace-vars some.namespace/some-method)
+      (untrace-vars some.namespace/some-method)
+
+to start tracking parameters and return entering a function and then stopping the trace with untrace.
 
 ## todo
 
-* lost clojars key-gpg configuration
 * travis-ci widget on the github page

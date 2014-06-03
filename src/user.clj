@@ -9,3 +9,10 @@
    (sort (map #(.getName %) (into [] (.getMethods (.getClass instance))))))
   ([instance prefix]
    (filter #(.startsWith (.toLowerCase %) prefix) (m instance))))
+
+(defmacro ? 
+  ([form] `(? ~form #'prn))
+  ([form f]
+   `(let [x# ~form]
+      (~f '~form '~'is x#)
+      x#)))
