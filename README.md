@@ -7,7 +7,7 @@ My set of utility functions designed to mix-in eXpand your Clojure REPL sessions
 xrepl functions are inside the user namespace. Since the REPL starts by default in the user namespace, all you need to do from leiningen project.clj is:
 
     (defproject yourprj "0.0.1"
-      :profiles  {:dev {:dependencies [[xrepl "0.1.2"]]}}
+      :profiles  {:dev {:dependencies [[xrepl "0.1.3"]]}}
     )
 
 ## What's inside (at the moment)?
@@ -38,6 +38,14 @@ will only list what starts with the letter "p".
       (untrace-vars some.namespace/some-method)
 
 to start tracking parameters and return entering a function and then stopping the trace with untrace.
+
+### debugging macro
+
+Another useful tool, when you want a finer granularity printing debug information, is the ? macro. Just apply the macro to the form you want to print:
+
+      (? (some-fn param1 param2))
+
+it is functionally equivalent to (some-fn param1 param2) with the addition of the side effect of printing the evaluated form to standard output.
 
 ## todo
 
